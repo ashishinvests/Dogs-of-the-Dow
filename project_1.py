@@ -98,7 +98,19 @@ print("\nThe amount to be allocated to invest in each of the dogs of the dow sto
 dogs_of_dow = ["VZ", "IBM", "XOM", "GE", "CVX", "KO", "PG", "PFE", "MRK", "CSCO"]
 
 
+#TODO Create a `PinanceClient` class that has functions in it that call the pinance code
 
+# TODO this needs to be a function that takes in a list of stocks and puts the quotes into a dictionay
+"""
+{'VZ': 
+	{
+		'stock': ...,
+		'quote': ...,
+		'market_price': ...
+	},
+	...
+}
+"""
 for each_symbol in dogs_of_dow:
 	stock_list = Pinance(each_symbol)
 	symbol = each_symbol
@@ -122,6 +134,7 @@ for each_symbol in dogs_of_dow:
 	#print("\nBuy", shares_to_buy, "shares of", each_symbol, "at", price_stock, "dollars.\n")
 
 
+# TODO: Create a function that does this, and then another function that calls that first function in a loop
 
 # Get price of stocks from dogs_of_dow list.
 #dog 1 price 
@@ -279,7 +292,7 @@ print("Buy", stockLibrary[dogs_of_dow[7]].position, "shares of", dog8)
 print("Buy", stockLibrary[dogs_of_dow[8]].position, "shares of", dog9)
 print("Buy", stockLibrary[dogs_of_dow[9]].position, "shares of", dog10)
 
-
+print("ashish")
 
 
 if __name__ == '__main__':
